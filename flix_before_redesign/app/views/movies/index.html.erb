@@ -1,0 +1,20 @@
+
+<h1><%= pluralize(@movies.size, "Movie") %></h1>
+
+<ul>
+
+
+  <% @movies.each do |movie| %>
+  
+  	<h2><%= link_to(movie.title, movie_path(movie)) %></h2>
+  	<article class="movie">
+  	<%= image_for(movie) %>
+  	</article>
+  	<li> <%= movie.description %> </li>
+  	<li> <%= movie.rating %> </li>
+  	<li> <%= movie.total_gross %> </li>
+	<li> <%= movie.released_on %> </li>
+	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+  <% end %>
+
+</ul>

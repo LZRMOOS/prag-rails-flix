@@ -1,0 +1,15 @@
+<h1><%=@movie.title%></h1>
+<p>
+	<h2>Description</h2>
+	<ul><%=@movie.description%></ul>
+
+</p>
+<p>
+	<h3>Total Gross:</h3> <%=format_total_gross(@movie)%>
+</p>
+
+
+<%= link_to "All Movies", root_path %>
+<center>
+	<button>Back</button>
+</center>
